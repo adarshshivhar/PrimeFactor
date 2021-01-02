@@ -22,5 +22,6 @@ public class PrimeFactorTest {
 		assertEquals(new ArrayList<Integer>(Arrays.asList(2,3)), pf.factorOf(6));
 		assertEquals(new ArrayList<Integer>(Arrays.asList(7)), pf.factorOf(7));
 		assertEquals(new ArrayList<Integer>(Arrays.asList(2,2,2)), pf.factorOf(8));
+		assertEquals(new ArrayList<Integer>(Arrays.asList(3,3)), pf.factorOf(9));
 	}
 }
