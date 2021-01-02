@@ -5,15 +5,16 @@ import java.util.List;
 
 public class PrimeFactor {
 
-	public List<Integer> factorOf(int i) {
+	public List<Integer> factorOf(int n) {
 		List<Integer> factors = new ArrayList<>();
-		if(i>1) {
-			if(i%2==0) {
+		int remainder = n;
+		if(remainder>1) {
+			if(remainder%2==0) {
 				factors.add(2);
-				i = i/2;
+				remainder = remainder/2;
 			}
-			if(i>1) {
-				factors.add(i);
+			if(remainder>1) {
+				factors.add(remainder);
 			}	
 		}
 		return factors;
